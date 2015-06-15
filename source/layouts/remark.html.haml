@@ -1,0 +1,14 @@
+!!! 5
+
+%html
+  %head
+    %title Remark
+    = stylesheet_link_tag "remarks"
+    = javascript_include_tag "all"
+    = javascript_include_tag "https://gnab.github.io/remark/downloads/remark-latest.min.js"
+    %meta(name="viewport" content="initial-scale=0.5")
+
+  %body
+    %textarea#source= yield
+    :javascript
+      var slideshow = remark.create();
