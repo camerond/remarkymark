@@ -1,3 +1,5 @@
+activate :autoprefixer
+
 helpers do
   def remarks
     Dir.glob('source/remarks/*.remark')

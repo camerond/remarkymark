@@ -1,2 +1,81 @@
+$blue: #1D8FE0
+$red: #f0544f
+$yellow: #f5cb5c
+$white: #fcf7f8
+$text: #11212b
+
+.thirds
+  width: 33%
+  float: left
+  padding: 0 10px
+  box-sizing: border-box
+
 .remark-slides-area
-  font-family: Helvetica
+  font-family: "Lato", Helvetica
+  .remark-slide-content
+    border: 10px solid $red
+    box-shadow: inset 0 0 0 10px $yellow, inset 0 0 0 20px $blue
+    color: $text
+    background: $white
+    padding: 1em 2em
+    font-size: 24px
+    &.small_bullets
+      ul
+        font-size: .8em
+        li + li
+          margin-top: 10px
+    &.middle
+      h1
+        font-size: 60px
+        margin: 0
+        padding: 0
+      h2
+        font-size: 40px
+        margin: 20px 0 0 0
+    &.image-bg
+      background: none
+      h1
+        color: #fff
+      .image
+        position: absolute
+        left: 30px
+        top: 30px
+        bottom: 30px
+        right: 30px
+        overflow: hidden
+        text-align: center
+        z-index: -1
+        img
+          width: auto
+          height: 100%
+        &.blur
+          filter: blur(10px)
+    .small
+      font-size: .9em
+    h1
+      font-weight: 300
+      text-align: center
+      color: $blue
+      font-size: 40px
+      font-weight: 900
+      + h2
+        margin-top: -20px
+    h2
+      color: $red
+      text-align: center
+      font-size: 30px
+    .remark-inline-code
+      background: #f0f0f0
+      padding: 0 .2em
+      margin: 0 .2em
+      font-size: .9em
+    ul
+      padding-left: 80px
+      li
+        list-style-type: square
+        + li
+          margin-top: 20px
+    pre
+      margin: .3em 0
+    .remark-slide-number
+      display: none
